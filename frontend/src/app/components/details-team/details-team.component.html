@@ -1,0 +1,116 @@
+
+
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>List Team</h2>
+    </div>
+    <div class="col-sm">
+    
+<div>
+  <div *ngIf="user">
+    <h2 >Chef :{{user.id}} </h2>
+    <div>
+      <label><strong>firstname:</strong></label> {{ user.firstname }}
+    </div>
+    <div>
+      <label><strong>lastname:</strong></label>
+      {{ user.lastname }}
+    </div>
+  </div>
+
+</div>
+    </div>
+
+    <div class="col-sm">
+
+
+
+
+    
+      <button
+      style="margin: 50px; padding: 10px"
+      type="button"
+      class="btn btn-primary"
+      (click)="openPopup()">Show Data
+      </button>
+      <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{'display':displayStyle}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add new Member</h4>
+        </div>
+        <div class="modal-body" >
+          <form (ngSubmit)="saveEquipe()">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Firstname</label>
+                <input type="text" name="firstname" [(ngModel)]="equipe.name"  class="form-control"  placeholder="FirstName">
+              </div>
+            </div>
+           
+            <button type="submit" class="btn btn-primary">add Team</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger"
+              (click)="closePopup()">
+          Close
+          </button>
+        
+
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<table class="table table-dark" *ngIf="user">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">name</th>
+
+     
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr *ngFor="let e of user.equipes" >
+        <th scope="row">{{e.id}}</th>
+        <td> {{e.name}} </td>
+      </tr>
+    </tbody>
+  </table>
+ 
