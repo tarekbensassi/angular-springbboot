@@ -62,9 +62,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-					 <finalName>dbc</finalName>
 
 		</plugins>
+		<finalName>project</finalName>
+
 	</build>
 
 </project>
