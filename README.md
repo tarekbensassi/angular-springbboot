@@ -5,7 +5,7 @@ Cette application est développée en tant que Tache dans un projet avec Spring 
 ## Getting Started
 
 All the code required to run this project is available in this Git repository. 
-You can either download it as a zip file from gitlub or run:
+You can either download it as a zip file from github or run:
 
 ```bash
 $ git clone  https://github.com/tarekbensassi/angular-springbboot.git
@@ -50,7 +50,7 @@ If you don't want to go through the process of using an IDE and just want to get
 $ mvn spring-boot:run
 ```
 
-If everything went well, you should be able to access the web app here: http://localhost:9191/dbc
+If everything went well, you should be able to access the web app here: http://localhost:9090
 
 #### Using Spring STS
 
@@ -68,7 +68,7 @@ Spring STS makes it simple to import and run Spring Boot projects. In order to d
 Before hitting run, lets make sure all the Maven dependencies are in place:
 
 1. Open the Package Explorer.
-2. Right click on the dbc project.
+2. Right click on the  project.
 3. Navigate to "Maven - Update Project".
 
 Once the dependencies are downloaded and installed, we have two options to run:
@@ -79,7 +79,7 @@ Once the dependencies are downloaded and installed, we have two options to run:
 2. Run via "Boot Dashboard":
    1. Open the "Boot Dashboard".
    2. Expand "local".
-   3. Select dbc.
+   3. Select project.
    4. Hit the Play button.
 
 If everything went well, you should be able to access the web app here: http://localhost:9090/
