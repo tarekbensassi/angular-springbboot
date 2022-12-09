@@ -10,10 +10,12 @@ import lombok.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "roles")
-public class Role {
+@Table(name = "equipe")
+public class Equipe {
+	
+	
 	@Id
-	@Column(name = "role_id")
+	@Column(name = "equipe_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String name;
