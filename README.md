@@ -82,16 +82,16 @@ Once the dependencies are downloaded and installed, we have two options to run:
    3. Select dbc.
    4. Hit the Play button.
 
-If everything went well, you should be able to access the web app here: http://localhost:9091/
+If everything went well, you should be able to access the web app here: http://localhost:9090/
 
-#### Generating WAR file
+#### Generating Jar file
 
 To generate the Jar file and start up the server, run:
 
 ```bash
 $ mvn clean package
 $ cd target
-$ java -jar dbc.jar
+$ java -jar project.jar
 ```
 
 #### Database 
